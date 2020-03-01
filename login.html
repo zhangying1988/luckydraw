@@ -11,16 +11,22 @@
     <script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
-<div class="banner"><img src="image/banner2.jpg"></div>
-<div class="login-container">
-    <div class="number-text">
-        <input type="text" class="wt1" id="text1" placeholder="请输入手机账号">
+<div class="login-bg">
+    <div class="login-container">
+<!--        <div class="fullbg"><img src="image/bg.png"></div>-->
+        <h5 class="login-title">登录</h5>
+        <div class="number-text">
+            <label class="login-label">工号</label>
+            <input type="text" class="wt1" id="text1" placeholder="请输入工号">
+        </div>
+        <div class="user-text">
+            <label class="login-label">姓名</label>
+            <input type="text" class="wt1" id="text2" placeholder="请输入姓名">
+        </div>
+        <div class="prompt1"></div>
+        <div class="login-btn-box"><button class="btn-login">登录</button></div>
+
     </div>
-    <div class="user-text">
-        <input type="text" class="wt1" id="text2" placeholder="密码">
-    </div>
-    <div class="prompt1"></div>
-    <button class="btn-login">登录</button>
 </div>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/login.js"></script>

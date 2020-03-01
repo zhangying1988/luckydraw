@@ -1,7 +1,10 @@
 img {
     width: 100%;
 }
-
+#wrap {
+    overflow: hidden;
+    position: relative;
+}
 /*登录*/
 .banner {
     width: 100%;
@@ -11,53 +14,65 @@ img {
     display: block;
     width: 100%;
 }
-
+/*.fullbg{*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 13.35rem;*/
+/*    z-index: -100;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*}*/
+.login-bg{
+    width: 100%;
+    height: 13.35rem;
+    background-image: url(../image/bg.png);
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    box-sizing: border-box;
+    padding-top: 3rem;
+}
 .login-container {
     width: 90%;
     margin: 0rem auto;
+    background: #fff;
+    border-radius: .4rem;
 }
-
+.login-title{
+    font-size: .6rem;
+    font-weight: bold;
+    padding: .4rem .4rem .2rem .4rem;
+}
 .wt1 {
-    width: 94%;
+    width: 100%;
     display: block;
     height: .8rem;
     line-height: .8rem;
-    font-size: 0.32rem;
+    font-size: 0.4rem;
+    font-weight: 600;
+    border-bottom: .02rem solid #999999;
+
 }
 
 .number-text, .user-text {
-    position: relative;
-    padding-left: 1rem;
-    border-bottom: .02rem solid #999999;
     margin-top: .4rem;
-    height: .8rem;
-    line-height: .8rem;
+    padding:0 .4rem;
 }
 
-.number-text:after, .user-text:after {
-    content: '';
-    position: absolute;
-    top: .1rem;
-    left: .1rem;
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: .6rem;
-    height: .6rem;
-    background-size: .6rem;
-    background-image: url("image/icon_NO.png");
+.login-label {
+    color: #999;
+    font-size: .24rem;
 }
-
-.user-text:after {
-    background-image: url("image/icon_user.png");
+.login-btn-box{
+    padding: .4rem ;
+    text-align: right;
 }
-
 .btn-login {
-    display: block;
+    display: inline-block;
     background: #d03434;
     width: 3rem;
     font-size: .36rem;
-    margin: .8rem auto 0;
     height: .8rem;
     line-height: .4rem;
     color: #fff;
@@ -632,4 +647,36 @@ img {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+}
+/*个人中心 我的奖品*/
+.win-list{
+    padding:0 .4rem;
+    font-size:.28rem;
+    line-height: .4rem;
+    margin-bottom: 1rem;
+}
+.win-list li{
+    margin-top: .4rem;
+}
+.win-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.win-item-dt{
+    width: 2rem;
+}
+.win-item-dd{
+    flex: 1;
+}
+.win-notice{
+    background: #f19c48;
+    height: .8rem;
+    line-height: .8rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #d03434;
+    text-align: center;
+    box-sizing: border-box;
 }
